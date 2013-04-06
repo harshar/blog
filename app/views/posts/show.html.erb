@@ -1,4 +1,18 @@
 <p id="notice"><%= notice %></p>
+<h1> Details </h1>
+<table>
+  <tr>
+    <th>Email</th>
+    <th>Post</th>
+  </tr>
+
+  <tr>
+    <td><%=User.find(@post.user_id).email%></td>
+    <td><%=@post.post%></td>
+  </tr>
+</table>
+
+<br />
 
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
